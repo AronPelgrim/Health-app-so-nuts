@@ -117,6 +117,9 @@ fieldset div input[type="checkbox"] {
 }
 fieldset div input[type="checkbox"]:checked::before {
 	content: '✔';
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 fieldset div input[type="checkbox"]:checked {
 	background-color: #FAC102;

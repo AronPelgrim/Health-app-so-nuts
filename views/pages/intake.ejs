@@ -18,7 +18,7 @@
                             <label for="<%- intakeData.id %>"><%- intakeData.text %> </label><br>
                             <div>
                                 <% for( let i = 0; i < intakeData.answerOptions.length; i++ ) { %>
-                                    <input type="radio" id="<%- intakeData.answerOptions[i].id %>" name="check" value="<%- intakeData.answerOptions[i].text %>">
+                                    <input type="radio" id="<%- intakeData.answerOptions[i].id %>" name="inputvalue" value="<%- intakeData.answerOptions[i].text %>">
                                     <label for="<%- intakeData.answerOptions[i].id %>"><%- intakeData.answerOptions[i].text %></label><br>
                                 <% } %>
                             </div>
@@ -28,7 +28,7 @@
                             <label for="<%- intakeData.id %>"><%- intakeData.text %> </label><br>
                             <div>
                                 <% for( let i = 0; i < intakeData.answerOptions.length; i++ ) { %>
-                                    <input type="checkbox" id="<%- intakeData.answerOptions[i].id %>" name="check" value="<%- intakeData.answerOptions[i].text %>">
+                                    <input type="checkbox" id="<%- intakeData.answerOptions[i].id %>" name="inputvalue" value="<%- intakeData.answerOptions[i].text %>">
                                     <label for="<%- intakeData.answerOptions[i].id %>"><%- intakeData.answerOptions[i].text %></label><br>
                                 <% } %>
                             </div>

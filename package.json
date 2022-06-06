@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/AronPelgrim/progressive-web-apps-2122",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
+    "file-system": "^2.2.2",
     "node-fetch": "^3.2.3"
   },
   "devDependencies": {
