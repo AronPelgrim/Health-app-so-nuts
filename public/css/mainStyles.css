@@ -36,7 +36,7 @@ header h1 a {
 	font-size: 1em;
 	margin: 8vh 0 5vh 5vw;
 }
-.landing a, fieldset a {
+.landing a, button, input[type="submit"] {
 	font-weight: 600;
 	font-size: 1em;
 	text-decoration: none;
@@ -53,18 +53,20 @@ header h1 a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: none;
 }
-fieldset a:first-of-type {
+button:first-of-type, input[type="submit"] {
 	bottom: 4.5em; 
 }
-fieldset a:nth-of-type(2) {
+button:nth-of-type(2) {
 	background-color: white;
 	box-shadow:0px 0px 0px .15em #FAC102 inset;
 }
 fieldset {
 	display: none;
+	animation: appear .2s both;
 }
-fieldset:target {
+fieldset.visible {
 	border: none;
 	font-family: 'Montserrat', sans-serif;
 	height: 80vh;
@@ -134,35 +136,25 @@ fieldset input[type=text], input[type=number] {
 fieldset input[type=text]:focus, input[type=number]:focus {
 	background-color: #FAC102;
 }
-fieldset span {
-	position: fixed;
-	top: 7em;
-	right: 2em;
+.validate {
+	display: none;
 }
-fieldset span::after {
-    content: '';
-    position: absolute;
-    height: .5em;
+.popup {
     display: block;
-    right: 0;
+    position: fixed;
+    top: 0;
     left: 0;
-    background: #FAC102;
-    transition: .7s ease;
-	border-radius: 2em;
-	margin-top: .2em;
-	animation: appear .4s linear;
+    height: fit-content;
+    width: 100vw;
+    background-color: #ff6666;
+    animation: appear .2s both;
 }
-fieldset:first-of-type span::after {
-	width: 25%;
-}
-fieldset:nth-of-type(2) span::after {
-	width: 50%;
-}
-fieldset:nth-of-type(3) span::after {
-	width: 75%;
-}
-fieldset:nth-of-type(4) span::after {
-	width: 100%;
+.popup p {
+    text-align: center;
+    font-size: 1.1em; 
+    padding: 1em;
+	font-style: italic;
+	font-weight: 500;
 }
 @keyframes heartbeat {
 	0% {

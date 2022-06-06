@@ -9,14 +9,12 @@
             <form method="post" enctype="application/x-www-form-urlencoded" action="/result">
                 <% data.forEach(function(intakeData) { %>
                     <% if (intakeData.type == null) { %>
-                        <fieldset id="<%- intakeData.id %>">
+                        <fieldset id="<%- intakeData.id %>" class="fieldset">
                             <label for="<%- intakeData.id %>"><%- intakeData.text %> </label><br>
                             <input type="text" id="<%- intakeData.id %>" name="inputvalue" required><br>
-                            <a href="#sex">Volgende</a>
-                            <a href="#<%- intakeData.id %>">Vorige</a>
                         </fieldset>
                     <% } else if (intakeData.type == "multiChoice") { %>
-                        <fieldset id="<%- intakeData.id %>">
+                        <fieldset id="<%- intakeData.id %>" class="fieldset">
                             <label for="<%- intakeData.id %>"><%- intakeData.text %> </label><br>
                             <div>
                                 <% for( let i = 0; i < intakeData.answerOptions.length; i++ ) { %>
@@ -24,11 +22,9 @@
                                     <label for="<%- intakeData.answerOptions[i].id %>"><%- intakeData.answerOptions[i].text %></label><br>
                                 <% } %>
                             </div>
-                            <a href="#sex">Volgende</a>
-                            <a href="#<%- intakeData.id %>">Vorige</a>
                         </fieldset>
                     <% } else if (intakeData.type == "multiOpenChoice") { %>
-                        <fieldset id="<%- intakeData.id %>">
+                        <fieldset id="<%- intakeData.id %>" class="fieldset">
                             <label for="<%- intakeData.id %>"><%- intakeData.text %> </label><br>
                             <div>
                                 <% for( let i = 0; i < intakeData.answerOptions.length; i++ ) { %>
@@ -36,12 +32,16 @@
                                     <label for="<%- intakeData.answerOptions[i].id %>"><%- intakeData.answerOptions[i].text %></label><br>
                                 <% } %>
                             </div>
-                            <a href="#sex">Volgende</a>
-                            <a href="#<%- intakeData.id %>">Vorige</a>
                         </fieldset>
                     <% } %>                    
                 <% }) %>
+                <input type="submit" value="Versturen" />
+                <button type="button" id="next">Volgende</button>
+                <button type="button" id="prev">Vorige</button>
             </form>
+            <div class="validate">
+                <p>Je hebt nog niet alle vragen ingevuld!</p>
+            </div>
         </main>
     </body>
 </html> 
