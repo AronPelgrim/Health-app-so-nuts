@@ -40,6 +40,10 @@ app.post('/result', (req, res) => {
 	})
 })
 
+app.get('/dashboard', (req, res) => {
+  res.render('dashboard')
+})
+
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
