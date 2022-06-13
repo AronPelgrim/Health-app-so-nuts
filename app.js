@@ -35,7 +35,7 @@ app.post('/result', (req, res) => {
 	userInput = JSON.stringify(req.body.inputvalue)
 	fs.writeFile('resultaten.json', userInput, 'utf8', cb => {
 	})
-	res.render('index', {
+	res.render('dashboard', {
 		resultList: JSON.parse(userInput)
 	})
 })
