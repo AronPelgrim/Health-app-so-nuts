@@ -209,12 +209,9 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 #dashboard .two {
 	width: 100vw;
 	text-align: center;
-	background-color: #B6DADD;
-	border-top-left-radius: 2em;
-	border-top-right-radius: 2em;
+	background-color: #fff;
 	margin-top: 88vh;
 	z-index: 100;
-	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 #dashboard .two h1 {
 	font-family: 'Playfair Display', serif;
@@ -222,9 +219,11 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	padding: .7em 0 .7em 0;
 	position: sticky;
 	top:0;
-	background-color: #B6DADD;
+	background-color: #FAC102;
 	z-index: 100;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
 }
 #dashboard .two ul:first-of-type {
 	display: flex;
@@ -237,7 +236,7 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	overflow-x: scroll;
 }
 #dashboard .two ul:first-of-type li {
-	border: .3em solid #fff;
+	border: .3em solid #FAC102;
 	border-radius: 50%;
 	height: 2.5em;
 	width: 2.5em;
@@ -245,7 +244,7 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	justify-content: center;
 	align-items: center;
 	padding: 1em;
-	opacity: .4;
+	opacity: .2;
 	scroll-snap-align: center;
 }
 #dashboard .two ul:first-of-type li:nth-child(3) {
@@ -270,6 +269,7 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	padding: .8em;
 	border-radius: 1em;
 	font-size: .9em;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 #dashboard .two .goals li p:first-of-type {
 	grid-area: 1 / 1 / span 1 / span 2;
@@ -288,6 +288,41 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: 700;
+}
+#dashboard .two ul:nth-of-type(3) li p:nth-of-type(3){
+	border: .3em solid #FAC102;
+	background-color: #FAC102;
+	padding: .6em;
+}
+#dashboard .three{
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0  0 3em 0;
+	text-align: center;
+	max-width: 80vw;
+	margin-left: 10vw;
+}
+#dashboard .three p:nth-of-type(1){
+	font-weight: 500;	
+	font-size: 1.2em;
+	font-style: italic;
+	letter-spacing: .01em;
+	line-height: 1.5;
+}
+#dashboard .three p:nth-of-type(2){	
+	font-family: 'Playfair Display', serif;
+	margin-top: .7em;
+	font-size: 1.6em;
+	font-weight: 600;	
+}
+#dashboard .three img{	
+	max-width: 40vw;	
+	filter: grayscale(100%);
+	margin-top: 1.5em;
 }
 @keyframes heartbeat {
 	0% {
