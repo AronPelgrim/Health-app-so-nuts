@@ -329,6 +329,26 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	filter: grayscale(100%);
 	margin-top: 1.5em;
 }
+.animation {
+	border: .2em solid green;
+	border-radius: 50%;
+	height: 2.5em;
+	width: 2.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 2em;
+	position: fixed;
+	left: 50%;
+	bottom: 30%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	z-index: 1000;
+}
+.finish {
+	animation: voltooi .4s ease-in-out;
+}
 @keyframes heartbeat {
 	0% {
 		letter-spacing: 0;
@@ -350,4 +370,23 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 		clip-path: polygon(0 0, 120% 0, 120% 120%, 0 120%);
 		opacity: 1;
 	}
+}
+@keyframes voltooi {
+    0% {
+        visibility: visible;
+        filter: blur(0.9em);
+        font-size: 1em;
+    }
+
+    50% {
+        visibility: visible;
+        font-size: 3em;
+        filter: blur(0);
+    }
+
+    100% {
+        visibility: visible;
+        filter: blur(0.9em);
+        font-size: 1em;
+    }
 }

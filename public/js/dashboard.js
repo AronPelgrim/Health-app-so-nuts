@@ -4,7 +4,7 @@ const neutraal = 'neutraal - 1.png'
 const humeurig = 'humeurig - 1.png'
 const dood = 'dood - 1.png'
 let mood = 1;
-let fitness = 400;
+let fitness = 250;
 let huidigeStand = document.querySelector('#stand')
 
 const stand = () => {
@@ -43,6 +43,11 @@ setInterval(stand, 1000)
 
 const levelPlus = () => {
         fitness = fitness + 100
+        const anim = document.querySelector('.animation')
+        anim.classList.remove("finish")
+        setTimeout(function () {
+            anim.classList.add("finish")
+        }, 0)
 }
 
 voltooi.forEach(button => {
