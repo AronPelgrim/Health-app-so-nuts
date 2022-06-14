@@ -14,8 +14,8 @@ app.set('views', './views/pages')
 
 app.use(express.static('public'))
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('/', (req, res) => {
   res.render('index')
@@ -35,9 +35,13 @@ app.post('/result', (req, res) => {
 	userInput = JSON.stringify(req.body.inputvalue)
 	fs.writeFile('resultaten.json', userInput, 'utf8', cb => {
 	})
-	res.render('index', {
+	res.render('dashboard', {
 		resultList: JSON.parse(userInput)
 	})
+})
+
+app.get('/dashboard', (req, res) => {
+  res.render('dashboard')
 })
 
 app.listen(port, () => {

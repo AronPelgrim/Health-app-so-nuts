@@ -14,6 +14,9 @@ header h1 {
 	border-radius: 0 0 50% 50%/0 0 100% 100%;
 	width: 40vw;
 	animation: heartbeat 5s .3s infinite;
+	position: fixed;
+	top: 0;
+	z-index: -50;
 }
 header h1 a {
 	text-decoration: none;
@@ -159,6 +162,193 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	font-style: italic;
 	font-weight: 500;
 }
+#dashboard h2 {
+	font-size: 1.2em;
+	margin: 2.5em 0 1.5em 0;
+}
+#dashboard .one {
+	height: 88vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5em;
+	position: fixed;
+	top: 0;
+	z-index: -50;
+}
+#dashboard .one .tamagotchi {
+	height: 17em;
+	width: 17em;
+	background-color: #FAC102;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#dashboard .one .tamagotchi img {
+	width: 13em;
+}
+#dashboard .one .welcome {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.8em;
+	margin-top: 2em;
+}
+#dashboard .one .progress {
+	height: 1.5em;
+	width: 10em;
+	background-color: #FAC102;
+	border-radius: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+}
+#dashboard .two {
+	width: 100vw;
+	text-align: center;
+	background-color: #fff;
+	margin-top: 88vh;
+	z-index: 100;
+}
+#dashboard .two h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.8em;
+	padding: .7em 0 .7em 0;
+	position: sticky;
+	top:0;
+	background-color: #FAC102;
+	z-index: 100;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
+}
+#dashboard .two ul:first-of-type {
+	display: flex;
+	gap: 1.2em;
+	margin-top: 3em;
+	justify-content: left;
+	align-items: center;
+	list-style-type: none;
+	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+}
+#dashboard .two ul:first-of-type li {
+	border: .3em solid #FAC102;
+	border-radius: 50%;
+	height: 2.5em;
+	width: 2.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	opacity: .2;
+	scroll-snap-align: center;
+}
+#dashboard .two ul:first-of-type li:nth-child(3) {
+	padding: 2em;
+	opacity: 1;
+	font-weight: 600;
+}
+#dashboard .two .goals {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.2em;
+	flex-direction: column;
+	list-style-type: none;
+}
+#dashboard .two .goals li {
+	width: 80vw;
+	background-color: #fff;
+	display: grid;
+	grid-template: repeat(3, 1.2em) / repeat(4, 1fr);
+	align-items: center;
+	padding: .8em;
+	border-radius: 1em;
+	font-size: .9em;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#dashboard .two .goals li p:first-of-type {
+	grid-area: 1 / 1 / span 1 / span 2;
+	font-weight: 600;
+}
+#dashboard .two .goals li p:nth-of-type(2){
+	grid-area: 3 / 1 / span 1 / span 2;
+	opacity: .6;
+}
+#dashboard .two .goals li p:nth-of-type(3){
+	grid-area: 2 / 4 / span 1 / span 1;
+	border: .3em solid green;
+	border-radius: 50%;
+	height: 2.5em;
+	width: 2.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+#dashboard .two ul:nth-of-type(3) li button {
+	all: unset;
+	grid-area: 2 / 4 / span 1 / span 1;
+	border: .3em solid #FAC102;
+	background-color: #FAC102;
+	padding: .6em;
+	border-radius: 2em;
+	font-weight: 700;
+
+}
+#dashboard .three{
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0  0 3em 0;
+	text-align: center;
+	max-width: 80vw;
+	margin-left: 10vw;
+}
+#dashboard .three p:nth-of-type(1){
+	font-weight: 500;	
+	font-size: 1.2em;
+	font-style: italic;
+	letter-spacing: .01em;
+	line-height: 1.5;
+}
+#dashboard .three p:nth-of-type(2){	
+	font-family: 'Playfair Display', serif;
+	margin-top: .7em;
+	font-size: 1.6em;
+	font-weight: 600;	
+}
+#dashboard .three img{	
+	max-width: 40vw;	
+	filter: grayscale(100%);
+	margin-top: 1.5em;
+}
+.animation {
+	border: .2em solid green;
+	border-radius: 50%;
+	height: 2.5em;
+	width: 2.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 2em;
+	position: fixed;
+	left: 50%;
+	bottom: 30%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	z-index: 1000;
+}
+.finish {
+	animation: voltooi .4s ease-in-out;
+}
 @keyframes heartbeat {
 	0% {
 		letter-spacing: 0;
@@ -180,4 +370,23 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 		clip-path: polygon(0 0, 120% 0, 120% 120%, 0 120%);
 		opacity: 1;
 	}
+}
+@keyframes voltooi {
+    0% {
+        visibility: visible;
+        filter: blur(0.9em);
+        font-size: 1em;
+    }
+
+    50% {
+        visibility: visible;
+        font-size: 3em;
+        filter: blur(0);
+    }
+
+    100% {
+        visibility: visible;
+        filter: blur(0.9em);
+        font-size: 1em;
+    }
 }
