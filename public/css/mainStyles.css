@@ -128,7 +128,7 @@ fieldset div input[type="checkbox"]:checked {
 	background-color: #FAC102;
 	margin-top: .8em;
 }
-fieldset input[type=text], input[type=number] {
+fieldset input[type=text] {
 	height: 4vh;
 	width: 85vw;
 	border: none;
@@ -139,7 +139,7 @@ fieldset input[type=text], input[type=number] {
 	font-weight: 500;
 	text-align: center;
 }
-fieldset input[type=text]:focus, input[type=number]:focus {
+fieldset input[type=text]:focus {
 	background-color: #FAC102;
 }
 .validate {
@@ -270,6 +270,7 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	border-radius: 1em;
 	font-size: .9em;
 	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	text-align: left;
 }
 #dashboard .two .goals li p:first-of-type {
 	grid-area: 1 / 1 / span 1 / span 2;
@@ -297,14 +298,16 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	padding: .6em;
 	border-radius: 2em;
 	font-weight: 700;
+	text-align: center;
 }
 #dashboard .two ul:nth-of-type(3) li button:nth-of-type(2) {
 	all: unset;
 	grid-area: 3 / 4 / span 1 / span 1;
-	box-shadow:0px 0px 0px .15em red inset;
+	box-shadow:0px 0px 0px .15em #FAC102 inset;
 	padding: .6em;
 	border-radius: 2em;
 	font-weight: 500;
+	text-align: center;
 }
 #dashboard .three{
 	background-color: #fff;
@@ -395,6 +398,7 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	padding: .6em;
 	border-radius: 2em;
 	font-weight: 700;
+	text-align: center;
 }
 #goals .one ul li p:first-of-type {
 	grid-area: 1 / 1 / span 1 / span 2;
@@ -403,6 +407,32 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 #goals .one ul li p:nth-of-type(2){
 	grid-area: 3 / 1 / span 1 / span 2;
 	opacity: .6;
+}
+#goals .one ul li input {
+	grid-area: 1 / 1 / span 1 / span 2;
+	border: none;
+	font-size: 1em;
+	padding: .2em;
+	border: .15em solid black;
+	border-radius: 2em;
+	font-weight: 500;
+	text-align: center;
+}
+#goals .one ul li input:focus {
+	border: .15em solid #FAC102;
+}
+#goals .one ul li select {
+	grid-area: 3 / 1 / span 1 / span 2;
+	border: none;
+	font-size: 1em;
+	padding: .2em;
+	border: .15em solid black;
+	border-radius: 2em;
+	font-weight: 500;
+	text-align: center;
+}
+#goals .one ul li select:focus {
+	border: .15em solid #FAC102;
 }
 #result .one .welcome {
 	text-align: center;
@@ -415,6 +445,13 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 }
 #result {
 	background-color: #fff;
+}
+#result h2 {
+	font-size: 1.2em;
+}
+#result h2:nth-of-type(2) {
+	margin-top: 1.5em;
+	font-size: 1.2em;
 }
 #result .one ul {
 	display: flex;
@@ -429,7 +466,7 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	width: 80vw;
 	background-color: #fff;
 	display: grid;
-	grid-template: repeat(4, 2.2em) / repeat(5, 1fr);
+	grid-template: repeat(3, 2em) / repeat(5, 1fr);
 	align-items: center;
 	padding: .8em;
 	border-radius: 1em;
@@ -437,43 +474,47 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 #result .one ul li p:first-of-type {
-	grid-area: 1 / 2 / span 1 / span 3;
+	grid-area: 2 / 3 / span 1 / span 1;
 	font-weight: 600;
 	text-align: center;
 	margin: 1em;
-	font-size: 1.2em;
 }
 #result .one ul li p:nth-of-type(2){
-	grid-area: 4 / 1 / span 1 / span 1;
+	grid-area: 3 / 1 / span 1 / span 1;
 	opacity: .6;
 	text-align: center;
 }
 #result .one ul li p:nth-of-type(3) {
 	all: unset;
-	grid-area: 2 / 1 / span 1 / span 1;
-	border: .3em solid red;
-	padding: 1em;
+	grid-area: 1 / 1 / span 2 / span 1;
+	border: .2em solid red;
+	height: 2.2em;
+	width: 2.2em;
 	border-radius: 2em;
 	font-weight: 700;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	place-self: center;
 }
-#result .one ul li p:nth-of-type(4){
-	grid-area: 4 / 5 / span 1 / span 1;
-	opacity: .6;
-	text-align: center;
-}
-#result .one ul li p:nth-of-type(5) {
+#result .one ul li:nth-of-type(3n + 4) p:nth-of-type(3) {
 	all: unset;
-	grid-area: 2 / 5 / span 1 / span 1;
+	grid-area: 1 / 1 / span 2 / span 1;
 	border: .3em solid green;
-	padding: 1em;
+	height: 2.2em;
+	width: 2.2em;
 	border-radius: 2em;
 	font-weight: 700;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	place-self: center;
 }
 #result .one ul li button {
 	all: unset;
-	grid-area: 3 / 3 / span 1 / span 1;
+	grid-area: 2 / 5 / span 1 / span 1;
 	background-color: #FAC102;
 	padding: .8em;
 	border-radius: 2em;
