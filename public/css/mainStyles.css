@@ -32,7 +32,7 @@ header h1 a {
 	font-family: 'Playfair Display', serif;
 	font-weight: 600;
 	font-size: 2.2em;
-	margin: 22vh 0 5vh 5vw;
+	margin: 30vh 0 5vh 5vw;
 }
 .landing p {
 	font-weight: 400;
@@ -72,7 +72,7 @@ fieldset {
 fieldset.visible {
 	border: none;
 	font-family: 'Montserrat', sans-serif;
-	height: 80vh;
+	height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -264,7 +264,7 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 	width: 80vw;
 	background-color: #fff;
 	display: grid;
-	grid-template: repeat(3, 1.2em) / repeat(4, 1fr);
+	grid-template: repeat(3, 1.5em) / repeat(4, 1fr);
 	align-items: center;
 	padding: .8em;
 	border-radius: 1em;
@@ -292,13 +292,19 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 }
 #dashboard .two ul:nth-of-type(3) li button {
 	all: unset;
-	grid-area: 2 / 4 / span 1 / span 1;
-	border: .3em solid #FAC102;
+	grid-area: 1 / 4 / span 1 / span 1;
 	background-color: #FAC102;
 	padding: .6em;
 	border-radius: 2em;
 	font-weight: 700;
-
+}
+#dashboard .two ul:nth-of-type(3) li button:nth-of-type(2) {
+	all: unset;
+	grid-area: 3 / 4 / span 1 / span 1;
+	box-shadow:0px 0px 0px .15em red inset;
+	padding: .6em;
+	border-radius: 2em;
+	font-weight: 500;
 }
 #dashboard .three{
 	background-color: #fff;
@@ -348,6 +354,146 @@ fieldset input[type=text]:focus, input[type=number]:focus {
 }
 .finish {
 	animation: voltooi .4s ease-in-out;
+}
+#goals {
+	background-color: #fff;
+}
+#goals .one .welcome {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.8em;
+	margin-top: 4em;
+	max-width: 90vw;
+	text-align: center;
+	margin-left: 5vw;
+}
+#goals .one ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.2em;
+	flex-direction: column;
+	list-style-type: none;
+	margin-top: 3em;
+}
+#goals .one ul li {
+	width: 80vw;
+	background-color: #fff;
+	display: grid;
+	grid-template: repeat(3, 1.2em) / repeat(4, 1fr);
+	align-items: center;
+	padding: .8em;
+	border-radius: 1em;
+	font-size: .9em;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#goals .one ul li button {
+	all: unset;
+	grid-area: 2 / 4 / span 1 / span 1;
+	border: .3em solid #FAC102;
+	background-color: #FAC102;
+	padding: .6em;
+	border-radius: 2em;
+	font-weight: 700;
+}
+#goals .one ul li p:first-of-type {
+	grid-area: 1 / 1 / span 1 / span 2;
+	font-weight: 600;
+}
+#goals .one ul li p:nth-of-type(2){
+	grid-area: 3 / 1 / span 1 / span 2;
+	opacity: .6;
+}
+#result .one .welcome {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.8em;
+	margin-top: 4em;
+	max-width: 90vw;
+	text-align: center;
+	margin-left: 5vw;
+}
+#result {
+	background-color: #fff;
+}
+#result .one ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.2em;
+	flex-direction: column;
+	list-style-type: none;
+	margin-top: 3em;
+}
+#result .one ul li {
+	width: 80vw;
+	background-color: #fff;
+	display: grid;
+	grid-template: repeat(4, 2.2em) / repeat(5, 1fr);
+	align-items: center;
+	padding: .8em;
+	border-radius: 1em;
+	font-size: .9em;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#result .one ul li p:first-of-type {
+	grid-area: 1 / 2 / span 1 / span 3;
+	font-weight: 600;
+	text-align: center;
+	margin: 1em;
+	font-size: 1.2em;
+}
+#result .one ul li p:nth-of-type(2){
+	grid-area: 4 / 1 / span 1 / span 1;
+	opacity: .6;
+	text-align: center;
+}
+#result .one ul li p:nth-of-type(3) {
+	all: unset;
+	grid-area: 2 / 1 / span 1 / span 1;
+	border: .3em solid red;
+	padding: 1em;
+	border-radius: 2em;
+	font-weight: 700;
+	text-align: center;
+}
+#result .one ul li p:nth-of-type(4){
+	grid-area: 4 / 5 / span 1 / span 1;
+	opacity: .6;
+	text-align: center;
+}
+#result .one ul li p:nth-of-type(5) {
+	all: unset;
+	grid-area: 2 / 5 / span 1 / span 1;
+	border: .3em solid green;
+	padding: 1em;
+	border-radius: 2em;
+	font-weight: 700;
+	text-align: center;
+}
+#result .one ul li button {
+	all: unset;
+	grid-area: 3 / 3 / span 1 / span 1;
+	background-color: #FAC102;
+	padding: .8em;
+	border-radius: 2em;
+	font-weight: 700;
+}
+#result a, #goals a {
+	font-weight: 600;
+	font-size: 1em;
+	text-decoration: none;
+	color: black;
+	position: relative;
+	background-color: #FAC102;
+	width: 70vw;
+	height: 6vh;
+	border-radius: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	margin: 2em 0 2em 15%;
 }
 @keyframes heartbeat {
 	0% {

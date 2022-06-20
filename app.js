@@ -35,9 +35,17 @@ app.post('/result', (req, res) => {
 	userInput = JSON.stringify(req.body.inputvalue)
 	fs.writeFile('resultaten.json', userInput, 'utf8', cb => {
 	})
-	res.render('dashboard', {
+	res.render('result', {
 		resultList: JSON.parse(userInput)
 	})
+})
+
+app.get('/main-goals', (req, res) => {
+  res.render('main-goals')
+})
+
+app.get('/day-goals', (req, res) => {
+  res.render('day-goals')
 })
 
 app.get('/dashboard', (req, res) => {
