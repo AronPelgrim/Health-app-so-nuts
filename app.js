@@ -40,10 +40,6 @@ app.post('/result', (req, res) => {
 	})
 })
 
-app.get('/main-goals', (req, res) => {
-  res.render('main-goals')
-})
-
 app.get('/day-goals', (req, res) => {
   res.render('day-goals')
 })
