@@ -1,16 +1,20 @@
 const voltooi = document.querySelectorAll('.voltooi');
-const vrolijk = 'vrolijk - 1.png'
-const neutraal = 'neutraal - 1.png'
-const humeurig = 'humeurig - 1.png'
-const dood = 'dood - 1.png'
+const vrolijk = ['ch2_st4.png', 'ch1_st4.png']
+const neutraal = ['ch2_st3.png', 'ch1_st3.png']
+const humeurig = ['ch2_st2.png', 'ch1_st2.png']
+const dood = ['ch2_st1.png', 'ch1_st1.png']
+const welkPoppetje = Math.floor(Math.random() * 2);
 let mood = 1;
-let fitness = 250;
+let fitness = 190;
+let levend = true;
 let huidigeStand = document.querySelector('#stand')
 
 const stand = () => {
-    fitness = fitness - 10;
+    if (levend == true) {
+        fitness = fitness - 10;
+    }
 
-    if (fitness > 200) {
+    if (fitness > 400) {
         mood = 1;
         huidigeStand.textContent = "Fitness: " + (fitness)
     }
@@ -22,32 +26,34 @@ const stand = () => {
         mood = 3;
         huidigeStand.textContent = "Fitness: " + (fitness)
     }
-    if (fitness <= 0) {
+    if (fitness == 0) {
         mood = 4;
     }
 
     if (mood === 1) {
-        document.querySelector("img").src = "images/" + vrolijk
+        document.querySelector("img").src = "images/" + vrolijk[welkPoppetje]
     }
     if (mood === 2) {
-        document.querySelector("img").src = "images/" + neutraal
+        document.querySelector("img").src = "images/" + neutraal[welkPoppetje]
     }
     if (mood === 3) {
-        document.querySelector("img").src = "images/" + humeurig
+        document.querySelector("img").src = "images/" + humeurig[welkPoppetje]
     }
     if (mood === 4) {
-        document.querySelector("img").src = "images/" + dood
+        document.querySelector("img").src = "images/" + dood[welkPoppetje]
+        levend = false
     }
 } 
 setInterval(stand, 1000)
 
 const levelPlus = () => {
-        fitness = fitness + 100
-        const anim = document.querySelector('.animation')
-        anim.classList.remove("finish")
-        setTimeout(function () {
-            anim.classList.add("finish")
-        }, 0)
+    levend = true
+    fitness = fitness + 100
+    const anim = document.querySelector('.animation')
+    anim.classList.remove("finish")
+    setTimeout(function () {
+        anim.classList.add("finish")
+    }, 0)
 }
 
 voltooi.forEach(button => {
