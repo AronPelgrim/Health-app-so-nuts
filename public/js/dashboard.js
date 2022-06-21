@@ -1,4 +1,5 @@
 const voltooi = document.querySelectorAll('.voltooi');
+const animeren = document.querySelectorAll('.animeren');
 const vrolijk = ['ch2_st4.png', 'ch1_st4.png']
 const neutraal = ['ch2_st3.png', 'ch1_st3.png']
 const humeurig = ['ch2_st2.png', 'ch1_st2.png']
@@ -44,11 +45,27 @@ const stand = () => {
         levend = false
     }
 } 
-setInterval(stand, 1000)
+
+const checkTamagotchi = () => {
+    if (typeof(huidigeStand) != 'undefined' && huidigeStand != null) {
+        setInterval(stand, 1000)
+    }
+}
 
 const levelPlus = () => {
     levend = true
-    fitness = fitness + 100
+    fitness = fitness + 200
+    const anim = document.querySelector('.animation')
+    anim.classList.remove("finish")
+    setTimeout(function () {
+        anim.classList.add("finish")
+    }, 0)
+    setTimeout(function () {
+        window.scrollTo(0, 0);
+    }, 400)
+}
+
+const animeer = () => {
     const anim = document.querySelector('.animation')
     anim.classList.remove("finish")
     setTimeout(function () {
@@ -58,4 +75,12 @@ const levelPlus = () => {
 
 voltooi.forEach(button => {
     button.addEventListener("click", levelPlus)
+})
+
+animeren.forEach(button => {
+    button.addEventListener("click", animeer)
+})
+
+window.addEventListener('load',function(){
+    checkTamagotchi()
 })

@@ -1,9 +1,13 @@
 const form = document.querySelector('form')
+const body = document.querySelector('body')
 const submit = document.querySelector('input[type=submit]')
 const nextBtn = document.getElementById('next')
 const prevBtn = document.getElementById('prev')
+const fieldsetVoeding = document.querySelector('.voeding')
+const fieldsetBeweging = document.querySelector('.beweging')
 const fieldsets = document.querySelectorAll('.fieldset')
 const popUp = document.querySelector('.validate')
+const root = document.documentElement;
 const total = fieldsets.length
 let count = 0
 
@@ -19,6 +23,8 @@ const showNext = () => {
     }
   hideAll()
   fieldsets[count].classList.add("visible")
+
+  themeColor()
 }
 
 const showPrev = () => {
@@ -31,6 +37,8 @@ const showPrev = () => {
     }
   hideAll()
   fieldsets[count].classList.add("visible")
+
+  themeColor()
 }
 
 const loading = () => {
@@ -49,6 +57,16 @@ const validate = () => {
 const removeValidate = () => { 
     if (popUp.classList.contains('popup')) {
         popUp.classList.remove('popup')
+    }
+}
+
+const themeColor = () => {
+    if (fieldsetVoeding.classList.contains('visible')) {
+        root.style.setProperty('--main-color', '#96b959')
+    } else if (fieldsetBeweging.classList.contains('visible')) {
+        root.style.setProperty('--main-color', '#73C6ED')
+    } else {
+        root.style.setProperty('--main-color', '#FAC102')
     }
 }
 
