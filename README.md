@@ -10,7 +10,7 @@ Welkom bij deze repository. Hier kan je de app vinden die ik heb gebouwd voor SO
 Volg deze link om de volledige app te beijken!
 [SO-NUTS app](https://so-nuts-aron-pelgrim.herokuapp.com/)
 
-## Inhoudsopgave :blue_book:
+# Inhoudsopgave :blue_book:
 
 -   [Design Challenge](#design-challenge)
 -   [Documentatie](#documentatie)
@@ -18,34 +18,34 @@ Volg deze link om de volledige app te beijken!
 -   [Eventuele toevoegingen](#eventuele-toevoegingen)
 -   [License](#license)
 
-## Design Challenge
+# Design Challenge :art:
 >Hoe kan een digitale tool ervoor zorgen dat gepensioneerden gestimuleerd worden om een duurzaam beweeg- en voedingspatroon aan te houden zodat sarcopenie, obesitas en sarcopene obesitas voorkomen kunnen worden?
 
-## Documentatie (In de WIKI)
+## Documentatie (In de WIKI) :memo:
 De documentatie, bestaande uit onder andere de **productbiografie** en **design rationale**, zijn te vinden in de **[Wiki](https://github.com/AronPelgrim/so-nuts/wiki)**.
 
-## De installatie
-### Clone deze repository
+# De installatie :computer:
+## Clone deze repository
 ```
 $ git clone https://github.com/AronPelgrim/so-nuts.git
 ```
 
-### Navigeer naar de repository
+## Navigeer naar de repository
 ```
 $ cd so-nuts
 ```
 
-### Start de server
+## Start de server
 ```
 $ npm start
 ```
 
-## Eventuele toevoegingen
+# Eventuele toevoegingen :zap:
 - [ ] Het technisch werkend maken van de resultatenlijst.
 - [ ] Nog meer characters waar elke week uit gekozen kan worden.
 - [ ] Het technisch werkend maken van het opslaan van de doelen.
 - [ ] Het technisch werkend maken van het opslaan van notities.
 - [ ] Het koppelen van de nieuwst aangeleverde API voor de beste intake vragen.
 
- ## License
+# License :closed_lock_with_key:
 [GNU General Public License](https://github.com/AronPelgrim/so-nuts/blob/main/LICENSE)
