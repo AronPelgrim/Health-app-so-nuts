@@ -10,12 +10,9 @@ Welkom bij deze repository. Hier kan je de app vinden die ik heb gebouwd voor SO
 Volg deze link om de volledige app te beijken!
 [SO-NUTS app](https://so-nuts-aron-pelgrim.herokuapp.com/)
 
-## Table of Contents
+## Inhoudsopgave
 
--   [API](#api)
--   [A preview](#a-preview)
--   [Activity diagram](#activity-diagram)
--   [Process](#process)
--   [How to install](#how-to-install)
--   [Any issues?](#any-issues)
--   [License](#license)
+-   [Design Challenge](#design-Challenge)
+
+## Design Challenge
+Hoe kan een digitale tool ervoor zorgen dat gepensioneerden gestimuleerd worden om een duurzaam beweeg- en voedingspatroon aan te houden zodat sarcopenie, obesitas en sarcopene obesitas voorkomen kunnen worden?
