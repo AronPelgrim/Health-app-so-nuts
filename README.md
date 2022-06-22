@@ -21,21 +21,21 @@ Volg deze link om de volledige app te beijken!
 # Design Challenge :art:
 >Hoe kan een digitale tool ervoor zorgen dat gepensioneerden gestimuleerd worden om een duurzaam beweeg- en voedingspatroon aan te houden zodat sarcopenie, obesitas en sarcopene obesitas voorkomen kunnen worden?
 
-## Documentatie (In de WIKI) :memo:
+# Documentatie (In de WIKI) :memo:
 De documentatie, bestaande uit onder andere de **productbiografie** en **design rationale**, zijn te vinden in de **[Wiki](https://github.com/AronPelgrim/so-nuts/wiki)**.
 
 # De installatie :computer:
-## Clone deze repository
+### Clone deze repository
 ```
 $ git clone https://github.com/AronPelgrim/so-nuts.git
 ```
 
-## Navigeer naar de repository
+### Navigeer naar de repository
 ```
 $ cd so-nuts
 ```
 
-## Start de server
+### Start de server
 ```
 $ npm start
 ```
