@@ -13,15 +13,15 @@ Volg deze link om de volledige app te beijken!
 # Inhoudsopgave :blue_book:
 
 -   [Design Challenge](#design-challenge-art)
--   [Documentatie](#documentatie)
--   [De installatie](#de-installatie)
--   [Eventuele toevoegingen](#eventuele-toevoegingen)
--   [License](#license)
+-   [Documentatie](#documentatie-wiki-memo)
+-   [De installatie](#de-installatie-computer)
+-   [Eventuele toevoegingen](#eventuele-toevoegingen-zap)
+-   [License](#license-key)
 
 # Design Challenge :art:
 >Hoe kan een digitale tool ervoor zorgen dat gepensioneerden gestimuleerd worden om een duurzaam beweeg- en voedingspatroon aan te houden zodat sarcopenie, obesitas en sarcopene obesitas voorkomen kunnen worden?
 
-# Documentatie:WIKI :memo:
+# Documentatie (WIKI) :memo:
 De documentatie, bestaande uit onder andere de **productbiografie** en **design rationale**, zijn te vinden in de **[Wiki](https://github.com/AronPelgrim/so-nuts/wiki)**.
 
 # De installatie :computer:
@@ -47,5 +47,5 @@ $ npm start
 - [ ] Het technisch werkend maken van het opslaan van notities.
 - [ ] Het koppelen van de nieuwst aangeleverde API voor de beste intake vragen.
 
-# License :closed_lock_with_key:
+# License :key:
 [GNU General Public License](https://github.com/AronPelgrim/so-nuts/blob/main/LICENSE)
