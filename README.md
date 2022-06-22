@@ -12,7 +12,7 @@ Volg deze link om de volledige app te beijken!
 
 # Inhoudsopgave :blue_book:
 
--   [Design Challenge](#design-challenge-:art:)
+-   [Design Challenge](#design-challenge-art)
 -   [Documentatie](#documentatie)
 -   [De installatie](#de-installatie)
 -   [Eventuele toevoegingen](#eventuele-toevoegingen)
