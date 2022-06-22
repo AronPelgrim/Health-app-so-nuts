@@ -15,12 +15,14 @@ Volg deze link om de volledige app te beijken!
 -   [Design Challenge](#design-challenge)
 -   [Documentatie](#documentatie)
 -   [De installatie](#de-installatie)
+-   [Eventuele toevoegingen](#eventuele-toevoegingen)
+-   [License](#license)
 
 ## Design Challenge
 >Hoe kan een digitale tool ervoor zorgen dat gepensioneerden gestimuleerd worden om een duurzaam beweeg- en voedingspatroon aan te houden zodat sarcopenie, obesitas en sarcopene obesitas voorkomen kunnen worden?
 
 ## Documentatie 
-De documentatie, bestaande uit onder andere de **productbiografie** en **design rationale**, zijn te vinden in de [Wiki](https://github.com/AronPelgrim/so-nuts/wiki)
+De documentatie, bestaande uit onder andere de **productbiografie** en **design rationale**, zijn te vinden in de **[Wiki](https://github.com/AronPelgrim/so-nuts/wiki)**.
 
 ## De installatie
 ### Clone deze repository
@@ -39,11 +41,11 @@ $ npm start
 ```
 
 ## Eventuele toevoegingen
-- [ ] Being able to paintings to a favourites list.
-- [ ] The app giving specific errors to specific situations.
-
-## Any issues?
-You can create an issue in this repository to let me know what's wrong.
+- [ ] Het technisch werkend maken van de resultatenlijst.
+- [ ] Nog meer characters waar elke week uit gekozen kan worden.
+- [ ] Het technisch werkend maken van het opslaan van de doelen.
+- [ ] Het technisch werkend maken van het opslaan van notities.
+- [ ] Het koppelen van de nieuwst aangeleverde API voor de beste intake vragen.
 
  ## License
 [GNU General Public License](https://github.com/AronPelgrim/so-nuts/blob/main/LICENSE)
