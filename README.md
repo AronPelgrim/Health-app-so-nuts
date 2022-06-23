@@ -5,9 +5,7 @@
 
 Welkom bij deze repository. Hier kan je de app vinden die ik heb gebouwd voor SO-NUTS. SO-NUTS is een Europees samenwerkingsverband van experts op het gebied van voeding, beweging, eHealth, sarcopenie, obesitas en sarcopenie obesitas. Bij deze opdracht was het de bedoeling dat er een web applicatie wordt ontwikkeld waarbij 55-plussers gestimuleerd worden om een duurzaam beweeg- en voedingspatroon aan te houden.
 
-<img width="250" alt="Schermafbeelding 2022-06-22 101945" src="https://user-images.githubusercontent.com/74137185/174980179-132170bd-080d-4752-86fb-7d606c5706c2.png">
-<img width="250" alt="image" src="https://user-images.githubusercontent.com/74137185/175017146-a6923df7-90e3-41a1-81f2-ffc06ef9ab2e.png">
-<img width="250" alt="image" src="https://user-images.githubusercontent.com/74137185/175018855-7b55b4f7-65e2-40ff-ba36-e2d83619e2b1.png">
+<img width="250" alt="Schermafbeelding 2022-06-22 101945" src="https://user-images.githubusercontent.com/74137185/174980179-132170bd-080d-4752-86fb-7d606c5706c2.png"><img width="250" alt="image" src="https://user-images.githubusercontent.com/74137185/175017146-a6923df7-90e3-41a1-81f2-ffc06ef9ab2e.png"><img width="250" alt="image" src="https://user-images.githubusercontent.com/74137185/175018855-7b55b4f7-65e2-40ff-ba36-e2d83619e2b1.png">
 
 
 Volg deze link om de volledige app te beijken!
