@@ -48,4 +48,4 @@ $ npm start
 - [ ] Het koppelen van de nieuwst aangeleverde API voor de beste intake vragen.
 
 # License :key:
-[GNU General Public License](https://github.com/AronPelgrim/so-nuts/blob/main/LICENSE)
+[MIT](https://github.com/AronPelgrim/so-nuts/blob/main/LICENSE)
